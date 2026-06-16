@@ -1,7 +1,9 @@
 //Build a 64-bit arithmetic shift register, with synchronous load.
 // The shifter can shift both left and right, and by 1 or 8 bit
 // positions, selected by amount.module top_module(
-    input clk,
+module shift18(
+      
+  input clk,
     input load,
     input ena,
     input [1:0] amount,
